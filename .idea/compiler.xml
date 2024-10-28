@@ -2,22 +2,30 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="eurekaserver" />
         <module name="teste" />
+        <module name="hello-world" />
         <module name="ms-clients" />
         <module name="eureka-server" />
+        <module name="ms-gateway" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="teste" target="21" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="eureka-server" options="-parameters" />
       <module name="eurekaserver" options="-parameters" />
+      <module name="hello-world" options="-parameters" />
       <module name="ms-clients" options="-parameters" />
+      <module name="ms-gateway" options="-parameters" />
       <module name="teste" options="-parameters" />
     </option>
   </component>
