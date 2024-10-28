@@ -1,6 +1,7 @@
 package ms_clients.controller;
 
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import ms_clients.models.dto.ClientSaveRequest;
 import ms_clients.models.entity.Client;
 import ms_clients.service.ClientService;
@@ -14,6 +15,7 @@ import java.net.URI;
 @RestController
 @RequestMapping("/client")
 @RequiredArgsConstructor
+@Slf4j
 public class ClientController {
     private final ClientService service;
 
